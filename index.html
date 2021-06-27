@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/evw1cpc.css">
+</head>
+<body>
+    <main>
+        <div id="homepage"></div>
+        <div id="leeruitkomsten"></div>
+        <div class="navbar" id="nav">
+            <ul>
+                <li class="lefty">Peter</li>
+                <li><a href="#homepage" onclick="WorkToHome()" id="home">Home</a></li>
+                <li><a href="#leeruitkomsten" onclick="HomeToWork()" id="work">Leeruitkomsten</a></li>
+                <li><a href="#projecten" onclick="ToProject()" id="projlink">Projecten</a></li>
+            </ul>
+        </div>
+        <div class="left" id="yellow"></div>
+        <div class="middle" id="darkgray"></div>
+        <div class="right" id="lightgray"></div>
+        <div class="fix" id="fixy">
+            <h1 class="t1" id="por1">PORTFOLIO</h1>
+            <h1 class="t2" id="por2">PORTFOLIO</h1>
+            <h1 class="t3" id="por3">PORTFOLIO</h1>
+        </div>
+        <div class="work" id="workid">
+            <h1>LEERUITKOMSTEN<span class="accents"> .</span></h1>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('im')"> Interactive Media</button>
+                <button class="btn" onclick="filterSelection('dev')">Development</button>
+                <button class="btn" onclick="filterSelection('design')"> Design</button>
+                <button class="btn" onclick="filterSelection('research')"> Research</button>
+                <button class="btn" onclick="filterSelection('comm')"> Communication</button>
+                <button class="btn" onclick="filterSelection('spr0')"> Spr. 0</button>
+                <button class="btn" onclick="filterSelection('spr1')"> Spr. 1</button>
+                <button class="btn" onclick="filterSelection('spr2')"> Spr. 2</button>
+                <button class="btn" onclick="filterSelection('spr3')"> Spr. 3</button>
+                <button class="btn" onclick="filterSelection('projx')"> Project X</button>
+            </div>
+
+            <div class="container">
+                <div class="filterDiv spr0 im design" onclick="LogoPage()">Logo Fontys</div>
+                <div class="filterDiv dev " onclick="Poc3Page()">Boodschappen</div>
+                <div class="filterDiv spr0 im design" onclick="Poc4Page()">Stylescape</div>
+                <div class="filterDiv spr0 design im comm" onclick="Poc5Page()">Brand Guide</div>
+                <div class="filterDiv spr0 design im" onclick="Poc6Page()" >Social Media Fontys</div>
+                <div class="filterDiv spr0 design im" onclick="Poc7Page()" >Stijl Experiment</div>
+                <div class="filterDiv spr0 design" onclick="Poc8Page()" >Animatie</div>
+                <div class="filterDiv projx research" onclick="Poc23Page()">Inspiratie X</div> 
+                <div class="filterDiv projx design" onclick="Poc24Page()">Eerste 3D animatie</div> 
+                <div class="filterDiv spr1 design im" onclick="Poc11Page()">McRonaldo</div>
+                <div class="filterDiv spr1 research" onclick="Poc10Page()">Testplan Mclympics</div>
+                <div class="filterDiv spr1 dev design" onclick="Poc2Page()">BurgerKoppen</div>
+                <div class="filterDiv spr1 design" onclick="Poc9Page()">Logo Animatie</div>
+                <div class="filterDiv spr2 research im" onclick="Poc15Page()">Fonts</div>
+                <div class="filterDiv dev " onclick="Poc1Page()">Cookie Clicker</div>
+                <div class="filterDiv spr2 research" onclick="Poc13Page()">Onderzoek Socials</div>
+                <div class="filterDiv spr2 design im" onclick="Poc14Page()">Social Media McDate</div>
+                <div class="filterDiv spr2 design im" onclick="Poc16Page()">McDate App Design</div>
+                <div class="filterDiv spr2 research" onclick="Poc12Page()">Testplan McDate</div>
+                <div class="filterDiv projx design" onclick="Poc25Page()">Tweede 3D animatie</div> 
+                <div class="filterDiv spr3 design im" onclick="Poc17Page()">McMovie Posters</div>
+                <div class="filterDiv spr3 research comm" onclick="Poc20Page()">Persona McMovie</div> 
+                <div class="filterDiv spr3 research comm" onclick="Poc19Page()">Customer Journey</div>
+                <div class="filterDiv spr3 design" onclick="Poc21Page()">McMovie Kaartjes</div>
+                <div class="filterDiv spr3 design im" onclick="Poc18Page()">AR JAWS</div> 
+                <div class="filterDiv spr3 design" onclick="Poc22Page()">McMovieBox</div>
+                <div class="filterDiv projx design" onclick="Poc26Page()">Eind Animatie X</div> 
+            </div>
+        </div>
+        <div class="project" id="logo">
+            <h1>LOGO .  <span class="back" onclick="LogoPageReturn()">&Cross;</span></h1>
+            <div class="projtext">
+                <p>Een logo voor het project van Sprint 0. We zijn direct begonnen met het logo voor dit project. Niet heel handig, maar ja, we hadden wat ideeën en wouden dit graag uitwerken.</p>
+                <p>We kwamen eigenlijk meteen op de naam Fontys Live, ik had hierdoor meteen een idee voor het Live gedeelte, dit is namelijk op twitch altijd witte tekst in een roode afgeronde rechthoek. Volgens feedback was dit echter niet heel erg interessant en het straalde ook geen 'gaming' uit.</p>
+                <p>Vervolgens ben ik op zoek gegaan naar inspiratie, denk hierbij aan logos van bijvoorbeeld LEC en LCK. Dit zijn de kanalen die de regionale competitie van league of legends organiseren, LEC is voor Europa en LCK voor Korea. Met deze inspiratie heb ik veel aan mijn logos kunnen aanpassen en voornamelijk strakker en futuristischer gemaakt.</p>
+                <p>Ik was blij met het uiteindelijke resultaat, we hebben echter alleen mijn simpele icoon-logo gebruikt voor de social media kanalen en Twitch. Deze moest namelijk simpel zijn en op kleine schaal bekeken kunnen worden, dit ging namelijk niet met het uiteindelijke logo wat we gekozen hebben.</p>
+                <a href="files/LogoProcess.pdf" target="_blank">Klik hier voor process</a>
+            </div>
+            <img class="projectimg" src="imgs/LogoConnect.png">
+        </div>
+        <div class="project" id="poc1">
+            <h1>COOKIE CLICKER .  <span class="back" onclick="Poc1PageReturn()">&Cross;</span></h1>
+            <div class="projtext2">
+                <p>Dit is een project waar ik tijdens de development dagen aan heb gewerkt. Ik wou graag de game Cookie Clicker namaken en heb dit proberen uit te werken.</p>
+                <p>Ik heb dit project proberen te maken met zo min mogelijk googlen of tutorials. Achteraf had ik dit misschien beter niet kunnen doen, ik heb er veel van geleerd maar mijn code ziet er alles behalve netjes uit.</p>
+                <p>Na de boodschappen workshop heb ik aanpassingen gemaakt aan Cookie Clicker, tijdens de workshop ben ik namelijk bezig geweest met het opslaan van data in de webbrowser. Dit is natuurlijk super handig voor Cookie Clicker zodat je niet elke keer al je cookies kwijt bent als je de browser sluit.</p>
+                <a href="CookieClicker" target="_blank">Klik hier voor Cookie Clicker</a><br>
+                <a href="https://github.com/PeterMolFontys/CookieClicker" target="_blank">Klik hier voor de Git</a>
+            </div>
+        </div>
+        <div class="project" id="poc2">
+            <h1>BURGERKOPPEN .  <span class="back" onclick="Poc2PageReturn()">&Cross;</span></h1>
+            <div class="projtext">
+                <p>Voor sprint 1 heb ik een game gemaakt genaamd BurgerKoppen. Het doel ervan is om met Ronaldo McDonaldo de burger in de lucht te houden door deze op je hoofd te laten stuiteren.</p>
+                <p>Ik heb deze game in Unity gemaakt wat voor mij een nieuwe ervaring was. Ik had voorheen nog niet met Unity gewerkt dus het was vooral veel tutorials volgen op het begin. Dit zorgde voor een leuke uitdaging en ik heb veel plezier gehad tijdens het maken van de app.</p>
+                <p>Het is me dan uiteindelijk ook gelukt om deze app volledig werkend te krijgen, helaas wel alleen voor Android. Het was namelijk erg ingewikkeld om een app werkend te krijgen voor Apple. Je kan de app hieronder downloaden. dit bestand kan je vervolgens op je Android toestel zetten en openen. Na het installeren van de app kun je BurgerKoppen spelen!</p>
+                <p>Het design van de game is, op het logo na, ook door mij gedaan.</p>
+                <a href="files/burgerkoppen.apk" download>Klik hier om BurgerKoppen voor android te downloaden</a>
+                <a href="files/BurgerKoppenMobile.rar" download>Klik hier om het unity bestand te downloaden</a>
+            </div>
+            <div class="imagetext">
+                <video controls>
+                    <source src="files/Screen_Recording_BurgerKoppenMobile.mp4" type="video/mp4">
+                </video>
+            </div>
+            <!--
+            <div class="imagetext">
+                <img src="imgs/BurgerKoppen.png">
+                <p>Logo door Maik van Loenhout</p>
+            </div>
+            -->
+            
+        </div>
+        <div class="project" id="poc3">
+            <h1>BOODSCHAPPENLIJSTJE .   <span class="back" onclick="Poc3PageReturn()">&Cross;</span></h1>
+            <div class="projtext2">
+                <p>Een kleine poc die ik voor de development workshop 'boodschappenlijstje' heb gemaakt.</p>
+                <p>Ik heb vooral de uitdaging gezocht in het opslaan van mijn lijstje, zodat deze ook als ik de pagina verlaat en opnieuw bezoek niet weg is. Hiervoor heb ik Locale Storage gebruikt, hier had ik voorheen nog niet van gehoord. Wel kende ik cookies and session storage, maar voor deze poc (en ook zeker voor Cookie Clicker) lijkt Locale Storage mij het makkelijkst en fijnst werken. Je kan hiermee data in de broswer opslaan en terugroepen.</p>
+                <a href="Lijstje" target="_blank">Klik hier voor het boodschappenlijstje</a><br>
+                <a href="https://github.com/PeterMolFontys/Lijstje" target="_blank">Klik hier voor de Git</a>
+            </div>
+        </div>
+        <div class="project" id="poc4">
+            <h1>STYLESCAPE .   <span class="back" onclick="Poc4PageReturn()">&Cross;</span></h1>
+            <div class="projtext2">
+                <p>Om een huisstijl voor Fontys Connect te creëren zijn we aan de slag gegaan met stylescapes. Ik ben hierin met een paars (ivm. Fontys) en cyan aan de slag gegaan. We waren eerst met een logo begonnen, die van Fontys Live. Omdat het logo afgeronde hoeken had ben ik ook met ronde stijlvormen en typografie gegaan.</p>
+                <p>Dit vond ik echter meteen geen 'gaming' uistralen. en ik heb vervolgens gehoekte stijlvormen en een futuristischer font gebruikt.</p>
+                <p>Tot slot heb ik een andere stijlvorm gemaakt, de donkergrijse achtergrond met de lichtere grijzen driehoeken. Dit hebben we vervolgens ook overal gebruikt in onze posters en presentities. Ook hebben we in de laatste versie ons logo meteen verwerkt en het paars weg gelaten. </p>
+                <a href="files/StylescapeProcess.pdf" target="_blank">Klik hier voor het process</a>
+            </div>
+            <img class="projectimgbottom" src="imgs/StylescapeConnect.png">
+        </div>
+        <div class="project" id="poc5">
+            <h1>BRAND GUIDE .  <span class="back" onclick="Poc5PageReturn()">&Cross;</span></h1>
+            <div class="projtext2">
+                <p>Ik heb me voor de brandguides laten inspireren door een brandguide die Pieter met ons had gedeeld. Deze was qua design leeg en simpel maar de opzet werd hierdoor wel heel duidelijk voor ons. Dit hebben we dan ook zo goed mogelijk proberen te volgen.</p>
+                <p>Voor de Brand Guide is het wat lastig om precies aan te wijzen wat ik heb toegevoegd eraan, ik zal het toch proberen. In zowel versie 1 als 2 heb ik het grootste gedeelte van het design gedaan, zo heb ik de patronen op de paginas gemaakt, de lettertypes geselecteerd en de kleuren uitgezocht.</p>
+                <p>De eerste brandguide hebben we in de eerste week van Sprint 0 gemaakt en na feedback kwamen we erachter dat dit misschien niet helemaal aansluit bij de opdracht. We hebben toen onze hele huisstijl overhoop gegooid en versie 2 is hiervan het resultaat.</p>
+                <a href="files/brandguidev1.pdf" target="_blank">Klik hier voor versie 1</a> <br>
+                <a href="files/brandguidev2.pdf" target="_blank">Klik hier voor laaste versie</a>
+            </div>
+        </div>
+        <div class="project" id="poc6">
+            <h1>SOCIAL MEDIA .  <span class="back" onclick="Poc6PageReturn()">&Cross;</span></h1>
+            <div class="projtext3">
+                <p>Voor de social media posts die we tijdens deze sprint willen plaatsten heb ik twee posters gemaakt. Deze zijn voor het begin van het event om te plaatsten zodra je de stream live gaat.</p>
+                <p>De eerste versie heb ik gemaakt om mijn idee over te kunnen brengen, we hadden toen nog geen fotos van de docenten en studenten die we konden gebruiken. De voornaamste feedback hierop was dan ook dat deze mensen onbekent waren en dus niet gebruikt kunnen worden. We zijn in de week erop dan ook fotos gaan maken met een paar docenten en een student van het studenten team.</p>
+                <p>Daar uit kwam dan mijn laatste versie, die ik, naast de fotos, ook nog wat verder verbeterd heb na feedback uit de groep. Het moest namelijk wat spannender en meer 'gaming' uitstralen.</p>
+                <a href="files/SocialMediaProcess.pdf" target="_blank">Klik hier voor het process</a> <br>
+            </div>
+            <img class="projectimg3" src="imgs/SocialMediaLive.png">
+        </div>
+        <div class="project" id="poc7">
+            <h1>STIJL EXPERIMENTEN . <span class="back" onclick="Poc7PageReturn()">&Cross;</span></h1>
+            <div class="projtext3">
+                <p>Een experiment om te spelen met mogelijke stijl verschillen die aansluiten bij de kernwoorden die we voor on project gekozen hadden.</p>
+                <p>Ik heb hiervoor een 'offline-scherm' gemaakt die aansluit bij de kernwoorden Fun, Connect en Feature.</p>
+                <p>Hiervoor ben ik opzoek gegaan naar fonts die ik hierbij vind aansluiten en heb ik geprobeerd de achtergrond op zo'n manier aan te passen dat ook dit aansluit bij het kernwoord zonder onze hele brandstijl overhoop te gooien.</p>
+                <a href="files/StijlExperimenten.pdf" target="_blank">Klik hier voor alle versies</a> <br>
+            </div>
+            <img class="projectimg3" src="imgs/Stijlvariations.png">
+        </div>
+        <div class="project" id="poc8">
+            <h1>ANIMATIE . <span class="back" onclick="Poc8PageReturn()">&Cross;</span></h1>
+            <div class="projtext">
+                <p>Een korte animatie die ik heb gemaakt in After Effects. Dit was voor mij mijn eerste keer werken met After Effects dus hier heb ik eerst een paar tutorials voor gevolgd.</p>
+                <p>Vervolgens heb ik deze animatie van een MVP (Most Valuable Player) gemaakt, deze worden meestal geplaatst op de Social Media na een League of Legends match. Daar heb ik mij dan ook voornamelijk door laten inspireren.</p>
+                <a href="https://www.youtube.com/watch?v=gJBwE2psOBU&ab_channel=KeyframeAcademy" target="_blank">Tutorial voor text animatie</a>
+            </div>
+            <img class="projectimg" src="imgs/FontysAnimatie.gif">
+        </div>
+        <div class="project" id="poc9">
+            <h1>LOGO ANIMATIE . <span class="back" onclick="Poc9PageReturn()">&Cross;</span></h1>
+            <div class="projtext">
+                <p>Een animatie van ons logo, het design voor het logo zelf heb ik niet gedaan maar ik heb de animatie zelf verzonnen en gemaakt. Ook heb ik hiervoor onze sprite van McRonaldo aangepast zodat deze kan zwaaien.</p>
+                <p>Ik merkte na het opslaan van de animatie dat de kwaliteit heel slecht was. Bleek dat ik de svgs als hele kleine afbeeldingen heb opgeslagen en vervolgens vergroot. Niet slim, wel een leer momentje.</p>
+                <p>Ook deze animatie heb ik in After Effects gemaakt, ik vind het leuk om deze kleine animaties te maken, ze voegen al snel heel veel toe aan een presentatie of iets dergelijks.</p>
+            </div>
+            <img class="projectimg" src="imgs/LogoAnimatie.gif">
+        </div>
+        <div class="project" id="poc10">
+            <h1>TESTPLAN MCLYMPICS . <span class="back" onclick="Poc10PageReturn()">&Cross;</span></h1>
+            <div class="projtext2">
+                <p>Dit is een testplan waar we als groep aan hebben gewerkt. Eerst hebben we samen bedacht wat we willen testen, vervolgens zijn we na gaan denken over hoe we dit het beste kunnen doen.</p>
+                <p>Onze eerste versie was niet erg overzichtelijk en niet concreet genoeg. We kregen als feedback om completer te zijn. Zet precies neer wat je gaat doen en hoe je dit gaat doen. </p>
+                <p>Na nog wat worstelen waren we tevreden met het testplan en hebben we allemaal individueel deze test uitgevoerd. Dit is voor mij altijd een beetje ongemakkelijk, ook omdat ik werk moet laten zien waar ik zelf ook al een mening over heb, en dit dan niet overeen komt met mijn eigen mening (wat overigens natuurlijk de reden is om te testen).</p>
+                <p>We hebben uiteindelijk duidelijke keuzes kunnen maken in zowel ons design en overbrengen van informatie om de pijnpunten die uit de test kwamen te verkleinen.</p>
+                <a href="files/TestplanMcLympics.pdf" target="_blank">Klik hier voor het test plan</a> <br>
+            </div>
+        </div>
+        <div class="project" id="poc11">
+            <h1>MCRONALDO . <span class="back" onclick="Poc11PageReturn()">&Cross;</span></h1>
+            <div class="projtext3">
+                <p>Voor de Mclympics games hadden we natuurlijk een character nodig. Ik ben hiervoor opzoek gegaan naar inspiratie en vond al vrij snel wat characters die ik er leuk uit vond zien.</p>
+                <p>Mijn eerste poging was om een character zelf te designen en tekenen, echter hebben we hiervan afgezien na mijn eerste probeersel. Hiervoor had ik de tekenkunsten noch de tijd om het te leren in deze korte sprint waar de focus lag op programmeren. </p>
+                <p>Dus ben ik een van mijn gevonden characters in Illustrator gaan overtrekken, een goede oefening ook overigens. Ook heb ik hier nog een paar kleine aanpassingen op gemaakt zodat hij er wat 'menselijker' uitziet.</p>
+                <a href="files/Characterinspiration.png" target="_blank">Klik hier voor inspiratie en een probeersel</a> <br>
+            </div>
+            <img class="projectimg3" src="imgs/CharacterMclympics.png">
+        </div>
+        <div class="project" id="poc12">
+            <h1>TESTPLAN MCDATE . <span class="back" onclick="Poc12PageReturn()">&Cross;</span></h1>
+            <div class="projtext2">
+                <p>Omdat dit onze tweede keer was om een testplan op te stellen ging het deze keer een stuk sneller.</p>
+                <p>Ook deze test hebben we weer als groep gemaakt en vervolgens individueel uitgevoerd.</p>
+                <p>Het testplan ging voornamelijk over het design en een klein beetje over het concept. Dankzij de vragen over het design hebben we hier aanpassingen aan gemaakt en zelfs een paar designs bij elkaar gevoegd. Voor het concept hebben we weinig tot geen aanpassingen hoeven te maken.</p>
+                <a href="files/TestplanMcDate.pdf" target="_blank">Klik hier voor het test plan</a> <br>
+            </div>
+        </div>
+        <div class="project" id="poc13">
+            <h1>ONDERZOEK SOCIALS . <span class="back" onclick="Poc13PageReturn()">&Cross;</span></h1>
+            <div class="projtext2">
+                <p>Een onderzoek naar social media; Welke social media platformen gebruikt onze doelgroep, en waarvoor?</p>
+                <p>Dit verslag heb ik samen met Maik geschreven, we zijn eerst bronnen gaan verzamelen waarin we onze informatie konden vinden. Vervolgens zijn we onze bronnen gaan vergelijken om te zien of de data en informatie die we hadden overeen komt.</p>
+                <p>Bij het schrijven hebben we even vast gelopen bij de notering van de bronnen (de APA methode). Ik dacht dit namelijk te weten maar de manier waarop ik het deed bleek na feedback niet helemaal correct. Uiteindelijk zijn we er toch uitgekomen, mede dankzij een <a href="https://www.scribbr.nl/bronnengenerator/apa/" target="_blank">link</a> die Maik had gevonden die het een stuk eenvoudiger maakt.</p>
+                <a href="files/Onderzoek%20Social%20Media%20en%20Marketing.pdf" target="_blank">Klik hier voor het onderzoek</a> <br>
+            </div>
+        </div>
+        <div class="project" id="poc14">
+            <h1>SOCIAL MEDIA MCDATE .  <span class="back" onclick="Poc14PageReturn()">&Cross;</span></h1>
+            <div class="projtext3">
+                <p>Ik heb voor de social media van McDate mijn inspiratie heel erg gehaald uit de bestaande social media van McDonalds Nederland. Ik had namelijk zelf geen idee waar ik moest beginnen.</p>
+                <p>Ik heb hier een paar posts van uitgezocht die ik zelf mooi vond en deze in een McDate jasje proberen te stoppen. </p>
+                <p>Toen ik er met een paar tevreden was ben ik deze gaan animeren om er wat leven in te blazen. Leuk voor op de socials en voor een reclame of iets dergelijks.</p>
+                <a href="files/SocialMcDateProcess.pdf" target="_blank">Klik hier voor het process</a> <br>
+            </div>
+            <img class="projectimg" src="imgs/Logo.gif">
+            <img class="projectimg" src="imgs/McDateHeart.gif">
+        </div>
+        <div class="project" id="poc15">
+            <h1>FONTS .  <span class="back" onclick="Poc15PageReturn()">&Cross;</span></h1>
+            <div class="projtext3">
+                <p>Een kleine verzameling van fonts die ik heb gevonden die ik bij McDate vond passen. Ik heb hiervoor gebruik gemaakt van verschillende websites zoals: <a href="https://www.fontsquirrel.com/" target="_blank">FontSquirrel</a>, <a href="https://www.dafont.com/" target="_blank">DaFont</a> en <a href="https://fonts.adobe.com/" target="_blank">Adobe Fonts</a>.</p>
+                <p>We hebben er uiteindelijk geen gebruikt uit mijn selectie.</p>
+            </div>
+            <img class="projectimg3" src="imgs/fonts2.png">
+        </div>
+        <div class="project" id="poc16">
+            <h1>MCDATE APP DESIGN .  <span class="back" onclick="Poc16PageReturn()">&Cross;</span></h1>
+            <div class="projtext3">
+                <p>Hoewel ik voor deze sprint in team marketing zat (ipv. team app design), heb ik toch mee proberen te denken en werken met de applicatie designs. Voor McDate was Tinder mijn grootste inspratie. Dit is dan ook duidelijk terug te zien in mijn designs.</p>
+                <p>Ik vond het moeilijk om het niet te serieus te maken, het concept was tenslotte daten met een knipoog maar omdat ik Tinder elke keer in gedachten had zat ik hier toch mee te worstelen. Gelukkig wist Rick hier meer raad mee.</p>
+                <p>In het uiteindelijke resultaat kan je duidelijk mijn stijl terugzien, deze is echter niet door mij gemaakt. Rick en Sem hebben de verschillende stijlen proberen samen te voegen en er iets heel moois van gemaakt. </p>
+                <a href="files/McDateProcess.pdf" target="_blank">Klik hier voor het process</a> <br>
+            </div>
+            <img class="projectimg3" src="imgs/mcdate.png">
+        </div>
+        <div class="project" id="poc17">
+            <h1>MCMOVIE POSTERS .  <span class="back" onclick="Poc17PageReturn()">&Cross;</span></h1>
+            <div class="projtext3">
+                <p>Dit project is min of meer gekozen zodat we deze posters kunnen uitwerken. Het idee was om bestaande filmposters in een McDonalds jas te stoppen.</p>
+                <p>Het was een uitdaging om ze zo te maken als ik voor ogen had. Ik was tenslotte geen photoshop expert. De workshop van Pieter heeft me hierin wel geholpen, waar ik technieken heb geleerd en in deze sprint uitstekend kon toepassen.</p>
+                <p>De feedback voor beide posters was het gebrek aan een call to action. Posters zien er goed uit maar uiteindelijk gaat het bij een poster om wat je wilt overbrengen. Hiermee ben ik toen aan de slag gegaan en heb ik wat geëxperimenteerd.</p>
+                <p>Ze waren erg leuk om te maken en ik ben dan ook erg tevreden met het resultaat.</p>
+                <a href="files/McMoviePosterProcess.pdf" target="_blank">Klik hier voor het process</a> <br>
+            </div>
+            <img class="projectimg3" src="imgs/McMoviePosters.png">
+        </div>
+        <div class="project" id="poc18">
+            <h1>AR JAWS .  <span class="back" onclick="Poc18PageReturn()">&Cross;</span></h1>
+            <div class="projtext">
+                <p>Een proof of concept wat ik heb uitgewerkt in <a href="https://arloopa.com/" target="_blank">Arloopa</a>. Hiermee kan je een afbeelding tot leven brengen. Je upload een afbeelding, maakt een 'experience' en hij is klaar voor gebruik. Vervolgens kun je deze afbeelding met de app scannen en, afhankelijk van jouw gekozen experience, zie je hem tot leven komen.</p>
+                <p>In mijn geval heb ik dus de JAWS poster gebruikt, in een 3d studio haaien en een hamburger gezet en deze zie je vervolgens als je de poster (of verzamelkaartje) scant.</p>
+                <p>Het idee hiervan was om de verzamelkaartjes net een extraatje te geven. We hebben hier uiteindelijk weinig verder nog mee gedaan en de JAWS poster is de enige waarvan het ook daadwerkelijk werkt.</p>
+            </div>
+            <img class="projectimg" src="imgs/sharkscard_2.gif">
+        </div>
+        <div class="project" id="poc23">
+            <h1>INSPIRATIE X .  <span class="back" onclick="Poc23PageReturn()">&Cross;</span></h1>
+            <div class="projtext">
+                <p>Ik kwam op het idee om een 3d animatie te maken doordat Pieter er altijd met zoveel enthousiasme over praat.</p>
+                <p>Daarbij kwam ook nog eens dat ik voor een van de inspiratie sessies een animatie had gevonden die ik erg gaaf vond. Het is een animatie voor BMW, gemaakt door <a href="https://aixsponza.com/">Aixsponza.com</a>. Je kunt de animatie hier langs zien.</p>
+                <p>Mijn doel voor Project X was dus om iets te maken wat in de richting komt van deze video. Na wat kort onderzoek en de hulp van Pieter kwam ik erachter dat het beste programma voor zoiets is Maxon Cinema 4D. Dit heb ik dus gelijk aangeschaft en ik ben wat in het programma gaan spelen. Ik begreep er echter in eerste instantie geen hout van. Dus opzoek naar tutorials..</p>
+            </div>
+            <iframe src="https://player.vimeo.com/video/400889330" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+        </div>
+        <div class="project" id="poc24">
+            <h1>EERSTE 3D ANIMATIE .  <span class="back" onclick="Poc24PageReturn()">&Cross;</span></h1>
+            <div class="projtext3">
+                <p>Ik ben letterlijk met de eerste tutorial die ik kon vinden aan de slag gegaan.</p>
+                <p>Tot mijn verassing kon je echt al redelijk snel iets super gaafs maken. Deze tutorial duurde niet zo heel lang maar ik heb mijn best gedaan wat aanpassingen te maken zodat ik weet hoe en waar ik dit kan doen.</p>
+                <p>Ik heb hier geleerd hoe ik met materialen kan spelen, deze kan aanpassen en toevoegen. Ook heb ik geleerd hoe ik de animatie maak en bewaar.</p>
+                <p>Ik schrok ervan hoe lang ik bezig was met het renderen van deze animatie van slechts 18 seconden. Ik dacht dat ik een redelijke PC thuis had staan!</p>
+            </div>
+            <iframe id="utub" src="https://youtube.com/embed/d3uQsLKwblc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+        </div>
+        <div class="project" id="poc25">
+            <h1>TWEEDE 3D ANIMATIE .  <span class="back" onclick="Poc25PageReturn()">&Cross;</span></h1>
+            <div class="projtext3">
+                <p>Hierna ben ik doel gerichter gaan zoeken. Hoe kan ik bijvoorbeeld een knikker door een baan laten bewegen? Dat komt tenslotte al dichter bij mijn uiteindelijke doel in de buurt.</p>
+                <p>Met deze tutorial heb ik geleerd hoe ik een object een bepaalde weg kan laten volgen. Ook heb ik wat meer met licht gespeeld en het creëren van verschillende objecten. </p>
+                <p>Tot slot heb ik geleerd hoe je plugins kan installeren en gebruiken. Dit was eigenlijk verassend simpel. Ik heb nog niet verder gezocht naar andere mogelijke plugins maar de Roll-It plugin was precies wat ik nodig had en super makkelijk in gebruik.</p>
+                <p>Achteraf mis ik een beetje de schaduw van de baan op de grond maar verder ziet hij er gaaf uit. </p>
+            </div>
+            <iframe id="utub" src="https://youtube.com/embed/9GOePr0Og68" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+        </div>
+        <div class="project" id="poc26">
+            <h1>EIND ANIMATIE X .  <span class="back" onclick="Poc26PageReturn()">&Cross;</span></h1>
+            <div class="projtext3">
+                <p>En dan mijn eigen animatie, gebruiken wat ik heb geleerd. Ik heb eerst de baan gemaakt die de bal moest afleggen met technieken die ik uit de tweede animatie heb geleerd. Vervolgens heb ik de bal deze baan laten volgen.</p>
+                <p>Nu moest ik alleen nog leren hoe ik de camera de bal kan laten volgen. Dit kreeg ik snel voor elkaar alleen het was niet helemaal zoals ik het voor ogen had. Uiteindelijk heb ik dezelfde baan voor de bal in de lucht geplakt en de camera deze laten volgen met dezelfde snelheid als de bal. Dit zorgde direct voor het resultaat waar ik op hoopte.</p>
+                <p>Nu nog de spannende objecten die precies optijd het pad vrij maken voor onze bal. Zo heb ik aan beide kanten wat objecten toegevoegd.</p>
+                <p>Ik had veel moeite met het licht correct krijgen. Hier ben ik dan ook best lang mee bezig geweest en hier heb ik een paar tutorials voor gekeken. Toen ik eindelijk tevreden was over hoe het eruit zag in het programma heb ik het renderen gestart en ben ik naar bed gegaan. Toen ik wakker werdt was ik erg teleurgesteld dat de kleuren en het licht er heel anders uit was komen te zien na het renderen. Het is naar mijn mening veels te donker geworden. Helaas, pindakaas.</p>
+            </div>
+            <iframe id="utub" src="https://youtube.com/embed/nrEB9YOpDo0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+        </div>
+        <div class="project" id="poc19">
+            <h1>CUSTOMER JOURNEY .   <span class="back" onclick="Poc19PageReturn()">&Cross;</span></h1>
+            <div class="projtext2">
+                <p>Mijn eerste stap voor de customer journey was om dit textueel neer te zetten. Dit was een flink <a href="files/personatext.pdf" target="_blank">verhaal</a> geworden wat Samantha (mijn persona) een stuk beter in beeld bracht.</p>
+                <p>Vervolgens ben ik dit gaan uitwerken in <a href="https://custellence.com/index.html" target="_blank">Custellence</a>, een website waarin je vrij makkelijk een hele nette customer journey kan maken. Dit is een website die ik een tijd geleden gevonden heb en heel fijn vind om mee te werken.</p>
+                <p>Mijn customer journey is iets te uitgebreid en heeft een hoop stappen die voor ons project mogelijk niet zo interessant zijn. Dit heb ik wel met opzet gedaan zodat we niet eventuele pijnpunten in de gehele reis missen. </p>
+                <p>Je kunt de afbeelding vergroten door er op te klikken zodat je de tekst goed kan lezen.</p>
+            </div>
+            <a href="imgs/CustJourney.png" target="_blank"><img class="projectimgbottom" src="imgs/CustJourney.png"></a><br>
+        </div>
+        <div class="project" id="poc20">
+            <h1>PERSONA MCMOVIE .   <span class="back" onclick="Poc20PageReturn()">&Cross;</span></h1>
+            <div class="projtext3">
+                <p>Tijdens de sprint van de McMovie hebben wij ons gericht op meerdere doelgroepen. De student was daar er een van en voor deze doelgroep heb ik een persona uitgewerkt.</p>
+                <p>Ontmoet Samantha Koolen, een spontane 19 jarige meid die graag met vriendinnen op stap gaat en zichzelf uitdaagt om zich nooit te vervelen. Ze gaat graag naar de McDonalds, de kipnuggets zijn haar go-to.</p>
+                <p>Ik vind dat mijn persona er strak en netjes uitziet en ik denk dat hij prima zou zijn als basis. Ik denk echter dat hij niet heel goed aansluit bij ons project. Zo had ik meer over Samantha in of bij de McDonalds kunnen vertellen en ook wat over haar film smaak en ervaringen. Wel heb ik hiervoor een verhaal geschreven voor de customer journey waar dit beter in naar voren komt maar dit is niet verwerkt in dit persona.</p>
+            </div>
+            <img class="projectimg3" src="imgs/Persona.png">
+        </div>
+        <div class="project" id="poc21">
+            <h1>MCMOVIE KAARTJES .  <span class="back" onclick="Poc21PageReturn()">&Cross;</span></h1>
+            <div class="projtext3">
+                <p>Voor de kaartjes ben ik verder gegaan met een versie die Rick (zie versie 1) had gemaakt.</p> 
+                <p>Ik heb hier wat aanpassingen aan gemaakt zodat de afbeelding beter naar voren komt. Ook heb ik een serienummer (zodat je weet hoeveel kaartjes je kunt verzamelen) en een zeldzaamheids-waarde in de vorm van een figuur toegevoegd. Het rondje komt het meest voor, gevolgd door het vierkantje. Het sterretje zijn de extreem zeldzame kaarten.</p>
+                <p>Tot slot heb ik de achtergrond nog een overlay gegeven zodat er net wat minder saai is. De groep heeft vervolgens met mijn photoshop bestand ook hun kaartjes op dezelfde manier verwerkt.</p>
+                <a href="files/McMovieCards.pdf" target="_blank">Klik hier voor het process</a>
+            </div>
+            <img class="projectimg3" src="imgs/Cards%20-%20walle.png">
+        </div>
+        <div class="project" id="poc22">
+            <h1>MCMOVIEBOX .  <span class="back" onclick="Poc22PageReturn()">&Cross;</span></h1>
+            <div class="projtext3">
+                <p>Ik heb ook een experiment gedaan met onze McMovieBox. Ik merkte alleen al snel dat er aan versies gewerkt werd die ik er veel beter uit vond zien dan die van mij dus ik ben hier uiteindelijk mee gestopt.</p> 
+                <p>Ik vind hem er wel strak uitzien maar er gebeurt weinig en hij is nog niet compleet. Overigens denk ik ook dat dit geen handige doos is om het eten in te stoppen en vervoeren.</p>
+                <p>Oftewel, goed dat de groep hier een beter design voor had!</p>
+               
+            </div>
+            <img class="projectimg3" src="imgs/mcmoviebox.png">
+        </div>
+        
+        <div class="sprints" id="projecten">
+            <h1>PROJECTEN <span class="accents">.</span><span class="backmag" id="backmagbtn" onclick="CloseMagz()">&Cross;</span></h1>
+            <div class="magazines">
+                <a onclick="mag1zoom()"><img src="imgs/verslagsprint0.png"></a>
+                <a onclick="mag2zoom()"><img src="imgs/verslagsprint1.png"></a>
+                <a onclick="mag3zoom()"><img src="imgs/verslagsprint2.png"></a>
+                <a onclick="mag4zoom()"><img src="imgs/verslagsprint3.png"></a>
+                <iframe id="mag1" src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=cj0zl031ci" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
+                <iframe id="mag2" src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=vpfwjjt6rh" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
+                <iframe id="mag3" src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=dk52nn14ot" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
+                <iframe id="mag4" src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=f1uiqhtdq"  seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
+            
+            </div>
+        </div>
+    </main>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
